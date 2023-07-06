@@ -1,0 +1,91 @@
+header {
+    background-color: #aee5e7;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #080000;
+}
+
+.container {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 75%;
+    height: auto;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto .valor {
+    font-weight: bold;
+}
+
+.producto .cantidad {
+    margin-top: 10px;
+}
+
+.producto .cantidad input {
+    width: 60px;
+}
+
+.producto .cantidad button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-pago {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #FFC0CB;
+    padding: 150px;
+    text-align: center;
+    margin-top: auto;
+    background-image: url('images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}

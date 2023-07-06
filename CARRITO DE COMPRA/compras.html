@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" type="text/css" href="estilo_compras.css">
+    <script src="script_compras.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="compras.html">Carrito de Compras</a></li>
+                <li><a href="contactos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Productos Disponibles</h1>
+
+        <div class="productos">
+            <div class="producto" data-id="1" data-nombre="VersionTech">
+                <img src="images/producto1.jpg" alt="VersionTech">
+                <h3>VersionTech</h3>
+                <p>Auriculares para juegos G2000 para PS5 PS4 PC Xbox One<br>auriculares de sonido envolvente con micrófono<br>luz LED para computadora portátil Mac Switch Playstation Xbox Series X/S - Azul</p>
+                <p class="valor">$20.00</p>
+                <div class="cantidad">
+                    <input type="number" id="cantidad-1" value="1" min="1">
+                    <button onclick="agregarProducto(1)">Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="images/producto2.jpg" alt="Razer BlackWidow V4 Pro">
+                <h3>Razer BlackWidow V4 Pro </h3>
+                <p>Teclado mecánico para juegos con cableado: interruptores mecánicos amarillos<br>lineales y silenciosos, teclas ABS Doubleshot - Dial de comando<br>Macros programables - Chroma RGB - Reposamuñecas magnético</p>
+                <p class="valor">$55.00</p>
+                <div class="cantidad">
+                    <input type="number" id="cantidad-2" value="1" min="1">
+                    <button onclick="agregarProducto(2)">Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="images/producto3.jpg" alt="Razer Basilisk V3 Pro">
+                <h3>Razer Basilisk V3 Pro</h3>
+                <p>Mouse inalámbrico personalizable para juegos: interruptores ópticos rápidos Gen-3<br>Rueda inclinable HyperScroll - Chroma RGB - 11 botones programables<br>Sensor óptico Focus Pro 30K - Negro clásico</p>
+                <p class="valor">$65.00</p>
+                <div class="cantidad">
+                    <input type="number" id="cantidad-3" value="1" min="1">
+                    <button onclick="agregarProducto(3)">Añadir</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="images/producto4.jpg" alt="Razer - Silla de videojuegos Iskur">
+                <h3>Razer - Silla de videojuegos Iskur</h3>
+                <p>Sistema de soporte lumbar ergonómico. Piel sintética de múltiples capas.<br>Cojines de espuma de alta densidad. Diseñadas para soportar.<br>Cojín para cabeza de espuma viscoelástica, color negro/verde</p>
+                <p class="valor">$355.00</p>
+                <div class="cantidad">
+                    <input type="number" id="cantidad-4" value="1" min="1">
+                    <button onclick="agregarProducto(4)">Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-pago" onclick="mostrarCarrito()">Proceder con el pago</button>
+    </div>
+
+    <script src="script_compras.js"></script>
+
+    <footer>
+        <p>Derechos reservados 2023</p>
+        <p>Creado por: Verónica Zevallos</p>
+    </footer>
+</body>
+
+</html>
